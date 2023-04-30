@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="search.css">
+
+</head>
+<body>
+	 <div class="search">
+            <h3></h3>
+            <form action="" method="get" class="search-bar" id="search">
+                <input type="text" class="input-field" placeholder="Select your topic" id="topic">                
+                <button type="submit" name="filter" onclick="search()"><img src="search.png"></button>
+            </form>
+            <script type="text/javascript">
+            	function search()
+            	{
+            		var topic = document.forms["search"]["topic"]
+            		if (topic.value == "") 
+            	  {
+                    window.alert("Please enter a topic");
+                    topic.focus();
+                    return false;
+                  }
+                  return done()
+                  
+            	}
+            </script>
+        </div>
+
+</body>
+</html>
