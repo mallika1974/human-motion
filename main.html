@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Human Motion Diffusion Model</title>
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-	<header>
-		<h1>Human Motion Diffusion Model</h1>
-	</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>Human Motion Diffusion Model</title>
+    <link
+      rel="stylesheet"
+      href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Human Motion Diffusion Model</h1>
+    </header>
 
-	<main>
-	<input id="searchbar" onkeyup="search_prompts()" type="text"
-        name="search" placeholder="Please enter your prompt">
+    <main>
+      <input
+        id="searchbar"
+        onkeyup="search_prompts()"
+        type="text"
+        name="search"
+        placeholder="Please enter your prompt" />
 
-	<section class="flex-container">
-		<a href="video 1.mp4">
-			<button class="button">A Person waving both of their hands</button>
-		</a>
+      <section class="flex-container">
+        <a href="videos/video_1.mp4">
+          <button class="button">A Person waving both of their hands</button>
+        </a>
 
-		<a href="video 2.mp4">
-			<button class="button">A Person jogs clockwise</button>
-		</a>
+        <a href="videos/video_2.mp4">
+          <button class="button">A Person jogs clockwise</button>
+        </a>
 
-	  <a href="video 3.mp4">
-			<button class="button">A Person stands on his right leg</button>
-		</a>
+        <a href="videos/video_3.mp4">
+          <button class="button">A Person stands on his right leg</button>
+        </a>
 
-	  <a href="video 4.mp4">
-			<button class="button">A Person walks slowly</button>
-		</a>
+        <a href="videos/video_4.mp4">
+          <button class="button">A Person walks slowly</button>
+        </a>
 
-	  <a href="video 5.mp4">
-			<button class="button">A Person raising a pic from the ground and hanging on the wall</button>
-		</a>
+        <a href="videos/video_5.mp4">
+          <button class="button">A Person raising a pic from the ground and hanging on the wall</button>
+        </a>
 
-	  <a href="video 6.mp4">
-			<button class="button">A Person performing a slight bow</button>
-		</a>
+        <a href="videos/video_6.mp4">
+          <button class="button">A Person performing a slight bow</button>
+        </a>
 
-	  <a href="video 7.mp4">
-			<button class="button">A Person sits on the ground</button>
-		</a>
+        <a href="videos/video_7.mp4">
+          <button class="button">A Person sits on the ground</button>
+        </a>
 
-	  <a href="video 8.mp4">
-			<button class="button">A Person jumps over a puddle</button>
-			</a>
+        <a href="videos/video_8.mp4">
+          <button class="button">A Person jumps over a puddle</button>
+        </a>
 
-	  <a href="video 9.mp4">
-			<button class="button">A Person is tiptoeing so that no one hears him</button>
-		</a>
+        <a href="videos/video_9.mp4">
+          <button class="button">A Person is tiptoeing so that no one hears him</button>
+        </a>
 
-	  <a href="video 10.mp4">
-			<button class="button">A Person goes downstairs</button>
-		</a>
+        <a href="videos/video_10.mp4">
+          <button class="button">A Person goes downstairs</button>
+        </a>
 
-	  <a href="video 11.mp4">
-			<button class="button">A Person holding his arm up in a defensive stance</button>
-		</a>
+        <a href="videos/video_11.mp4">
+          <button class="button">A Person holding his arm up in a defensive stance</button>
+        </a>
 
-	  <a href="video 12.mp4">
-			<button class="button">A Person is holding something in their left hand and stirring with their right</button>
-		</a>
+        <a href="videos/video_12.mp4">
+          <button class="button">A Person is holding something in their left hand and stirring with their right</button>
+        </a>
 
-	  <a href="video 13.mp4">
-			<button class="button">A Person walks in a semicircle and begins to climb</button>
-		</a>
+        <a href="videos/video_13.mp4">
+          <button class="button">A Person walks in a semicircle and begins to climb</button>
+        </a>
 
-	  <a href="video 14.mp4">
-			<button class="button">A Person is bouncing around while flapping his arms</button>
-		</a>
+        <a href="videos/video_14.mp4">
+          <button class="button">A Person is bouncing around while flapping his arms</button>
+        </a>
 
-	  <a href="video 15.mp4">
-			<button class="button">A Person jumps straight up once</button>
-		</a>
+        <a href="videos/video_15.mp4">
+          <button class="button">A Person jumps straight up once</button>
+        </a>
 
-	  <a href="video 16.mp4">
-			<button class="button">A Person throws a punch with each hand</button>
-		</a>
-	</section>
-</main>
+        <a href="videos/video_16.mp4">
+          <button class="button">A Person throws a punch with each hand</button>
+        </a>
 
-<script>
-	function search_prompts() {
-		let input = document.getElementById('searchbar').value
-		input = input.toLowerCase();
-		let x = document.getElementsByTagName('a');
-		
-		for (i = 0; i < x.length; i++) {
-			if (!x[i].innerHTML.toLowerCase().includes(input)) {
-				x[i].style.display="none";
-			} else {
-				x[i].style.display="block";				
-			}
-		}
-	}
-</script>
-</body>
+        <a href="videos/video_17.mp4">
+          <button class="button">A Person is swimming</button>
+        </a>
+
+        <a href="videos/video_18.mp4">
+          <button class="button">A Person is crawling</button>
+        </a>
+
+        <a href="videos/video_19.mp4">
+          <button class="button">A Person is swinging a cricket bat</button>
+        </a>
+
+        <a href="videos/video_20.mp4">
+          <button class="button">A Person is break-dancing</button>
+        </a>
+      </section>
+    </main>
+
+    <script>
+      function search_prompts() {
+        let input = document.getElementById("searchbar").value;
+        input = input.toLowerCase();
+        let x = document.getElementsByTagName("a");
+
+        for (i = 0; i < x.length; i++) {
+          if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
